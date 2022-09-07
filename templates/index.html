@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>Recommandation App</title>
+ 
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <!-- <link href="../static/jumbotron-narrow.css" rel="stylesheet"> -->
+
+    <!-- <link href="../static/style.css" rel="stylesheet">
+  -->
+ 
+</head>
+ 
+<body>
+ 
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="active btn"><a href="#">Accueil</a>
+                    </li>
+                    <li role="presentation" class="btn"><a href="https://github.com/Diane-GUEPET/Recommendation_APP-P9">Github/Diane_Guepet</a>
+                    </li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">Application - Recommandation d'articles </h1>
+        </div>
+ 
+        <div class="login">
+            <h2>Veuillez entrer l'id de votre utilisateur...</h2>
+        
+             <!-- Main Input For Receiving Query to our ML -->
+            <form action="{{ url_for('predict')}}"method="post">
+                <input type="text" name="ID Utilisateur" placeholder="Id_Utilisateur" required="required" />
+                <!-- <input type="text" name="Sepal_Width" placeholder="Sepal_Width" required="required" />
+                <input type="text" name="Petal_Length" placeholder="Petal_Length" required="required" />
+                <input type="text" name="Petal_Width" placeholder="Petal_Width" required="required" /> -->
+                <br>
+                <br>
+                <button type="submit" class="btn btn-primary btn-block btn-large"> Votre Recommandation!</button>
+            </form>
+        
+           <br>
+           <br>
+           {{ pred_cat_text }}
+           <br>
+           <br>
+           {{ pred_art_text }}
+        
+        
+           
+        
+        
+         </div>
+        
+         <br>
+         <br>
+         <br>
+         <br>
+        <footer class="footer">
+            <p>&copy; Diane_Guepet 2022. Articles recommendation using Python, Surprise, Flask and Azure.</p>
+        </footer>
+ 
+    </div>
+</body>
+ 
+</html>
