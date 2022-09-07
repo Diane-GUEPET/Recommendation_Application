@@ -6,7 +6,7 @@
 Mettre en place une application dont l'utilité est définie comme suit:
 
 "En tant qu’utilisateur de l’application, je vais recevoir une sélection de cinq articles."
-Fonctionnalité de l'application
+
 
     Entraînement des modèles
 
@@ -24,4 +24,6 @@ Contrairement à la méthode contend_based, cette méthodologie ne prend pas uni
 ## Mise en place de la fonction Azure sous VSCODE
 
 ## Mise en place de l'application Flask
+
+### Plus de détails sur l'utilisation des fichiers et codes de ce dépôt seront ajoutés...
 
