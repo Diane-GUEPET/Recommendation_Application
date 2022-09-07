@@ -1,7 +1,7 @@
 
-#REALISATION D' UNE APPLICATION DE RECOMMANDATION DE CONTENU
+# REALISATION D' UNE APPLICATION DE RECOMMANDATION DE CONTENU
 
-##Objectif principal
+## Objectif principal
 
 Mettre en place une application dont l'utilité est définie comme suit:
 
