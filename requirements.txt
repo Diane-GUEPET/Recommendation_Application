@@ -1,0 +1,40 @@
+# DO NOT include azure-functions-worker in this file
+# The Python Worker is managed by Azure Functions platform
+# Manually managing azure-functions-worker may cause unexpected issues
+
+azure-functions
+azure-storage-blob
+certifi
+charset-normalizer
+click
+colorama
+cycler
+Flask
+fonttools
+idna
+importlib-metadata
+itsdangerous
+Jinja2
+joblib
+kiwisolver
+MarkupSafe
+matplotlib
+missingno
+numpy
+packaging
+pandas
+Pillow
+pyparsing
+python-dateutil
+pytz
+requests
+scikit-learn
+scikit-surprise
+scipy
+seaborn
+six
+sklearn
+threadpoolctl
+urllib3
+Werkzeug
+zipp
