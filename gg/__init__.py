@@ -91,7 +91,10 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     if user_id:
         user_id=int(user_id)
         results, recommended_cats = predict_best_category_for_user(user_id, model, articles_df)
-        return func.HttpResponse(f"Salut utilisateur, {user_id}!\n Nous te recommandons les 5 articles suivants:\n {results}\n Ils proviennent des catégories {recommended_cats}.")
+        return func.HttpResponse(json.dumps({
+                "articles": results,
+                "categories": recommended_cats
+            }))
     else:
         return func.HttpResponse(
              f"Votre requête a été lancée avec succès. Veuillez entrer votre identifiant utilisateur afin d'obtenir vos recommandations.",
