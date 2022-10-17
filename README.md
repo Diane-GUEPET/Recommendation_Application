@@ -25,5 +25,5 @@ Contrairement à la méthode contend_based, cette méthodologie ne prend pas uni
 
 ## Mise en place de l'application Flask
 
-### Plus de détails sur l'utilisation des fichiers et codes de ce dépôt seront ajoutés...
+
 
